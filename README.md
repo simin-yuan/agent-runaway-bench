@@ -7,6 +7,8 @@ This repo answers that with one fake model endpoint and the same measurement for
 Chat Completions or Responses wire, and logs two things per request: whether the client asked for an
 output cap, and how much it read before hanging up.
 
+Write-up: [Who stops a runaway loop once the output cap is gone?](writeup.md)
+
 No API keys, no spend. Anyone can rerun it.
 
 ## Results (2026-10-19)
