@@ -13,12 +13,15 @@ No API keys, no spend. Anyone can rerun it.
 
 | Framework | Version | Output cap sent | Read before stopping | What the user gets |
 |---|---|---|---|---|
-| Hermes Agent, chat-completions wire (control) | `5fc490e` | none | **16,168 chars** (0.42 s) | "Repetition Detected", partial discarded |
+| Hermes Agent, chat-completions wire (control) | `5fc490e` | none | **16,168 chars** | "Repetition Detected", partial discarded |
 | OpenAI Agents SDK, Chat Completions model | 0.24.0 | none | 300,048 (all) | the whole loop as the final output |
 | OpenAI Agents SDK, Responses model | 0.24.0 | none | 300,048 (all) | the whole loop as the final output |
 | OpenAI Codex CLI, `codex exec` | 0.163.0 | none | 300,048 (all) | the whole loop printed to stdout |
 | smolagents, `ToolCallingAgent` | 1.26.0 | none | 300,048 (all) | the whole loop streamed |
 | LangGraph, `create_react_agent` | 1.2.16 | none | 300,048 (all) | the whole loop streamed |
+
+Every row has its own raw server log in [`results/`](results/). smolagents made a second request after
+its step limit; it also read the whole stream (details in `results/README.md`).
 
 OpenHands SDK 1.55.1 is not listed: a fresh install failed at import time on a dependency error, so it
 could not be measured.

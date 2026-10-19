@@ -1,0 +1,8 @@
+⚠️ **Response Stopped — Repetition Detected**
+
+The model fell into a repetition loop while writing this response, so the stream was stopped instead of running on. The partial response was discarded.
+
+→ Switch to a different model with `/model`
+→ Or resend your message (your conversation history is preserved)
+
+session_id: local-c430ed9a89cf469b7c157ac2b58db3eeaf6ad32fbc743a05cdcd49984eef0d86
