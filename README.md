@@ -73,3 +73,9 @@ and whether the client hung up early.
 
 Point its OpenAI-compatible base URL at `http://127.0.0.1:8765/v1`, ask it anything, and read the log.
 Pull requests with new rows are welcome.
+
+## Record
+
+- Discovered: 2026-10-19
+- First public: 2026-10-19
+- Patch commit: `0b900ca7af08` (on `NousResearch/hermes-agent`, PR #141479; not merged upstream)
