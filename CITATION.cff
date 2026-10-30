@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this bench in your work, please cite it as below."
+title: "Agent Runaway Bench"
+abstract: >-
+  What does an agent framework do when the model gets stuck repeating itself
+  mid-reply? One fake model endpoint streams a single sentence on repeat (about
+  300,000 characters) over the OpenAI Chat Completions or Responses wire, and logs two
+  things per request: whether the client asked for an output cap, and how much it read
+  before hanging up. No API keys and no spend; anyone can rerun it.
+authors:
+  - family-names: Yuan
+    given-names: "Simin"
+    orcid: "https://orcid.org/0009-0002-6843-3390"
+    alias: simin-yuan
+    website: "https://github.com/simin-yuan"
+license: MIT
+repository-code: "https://github.com/simin-yuan/agent-runaway-bench"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23808696
+    description: "Raw measurement records (dataset, CC-BY-4.0)"
+keywords:
+  - agents
+  - repetition
+  - runaway loops
+  - benchmark
+  - failure modes
