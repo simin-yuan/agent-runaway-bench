@@ -79,3 +79,14 @@ Pull requests with new rows are welcome.
 - Discovered: 2026-10-19
 - First public: 2026-10-19
 - Patch commit: `0b900ca7af08` (on `NousResearch/hermes-agent`, PR #141479; not merged upstream)
+
+## Citing the raw records
+
+The per-run records behind this benchmark are archived as a citable dataset:
+
+**Simin Yuan.** *Agent failure-mode benchmarks: raw measurement records.* Zenodo, 2026.
+DOI [10.5281/zenodo.23808696](https://doi.org/10.5281/zenodo.23808696) — concept DOI for later versions: `10.5281/zenodo.23808695`.
+
+- 721 files: the untouched result files from all four benchmarks, copied byte-for-byte at the commits named in this repository's record section.
+- The records are CC-BY-4.0; the code in this repository keeps its own license (below).
+- Cite this repository for the method, and the dataset for the runs behind the numbers.
