@@ -21,6 +21,9 @@ No API keys, no spend. Anyone can rerun it.
 | OpenAI Codex CLI, `codex exec` | 0.163.0 | none | 300,048 (all) | the whole loop printed to stdout |
 | smolagents, `ToolCallingAgent` | 1.26.0 | none | 300,048 (all) | the whole loop streamed |
 | LangGraph, `create_react_agent` | 1.2.16 | none | 300,048 (all) | the whole loop streamed |
+| NVIDIA NeMo Agent Toolkit, `tool_calling_agent` (Chat Completions / Responses) | 1.9.0 | none | 300,048 (all) | the whole loop as the final output |
+
+NeMo Agent Toolkit row (measured 2026-11-02): The model is the same local fake OpenAI-compatible server as every other row; no hosted model, no key. NAT 1.9.0 = tag `v1.9.0` (`baffefc68315b93e363cfd986c8f7e8dd45ce5e7`), `tool_calling_agent` workflow, `llms: {_type: openai}`, NAT defaults; NAT's agents always stream. n=3 per wire, run one after another, all 3 agreed; run 1 of each wire is in `results/nat-tool-calling-agent-*.jsonl`; runner: `runners/nat_bench.py` (`runaway` mode) and `runners/nat_runaway.sh`.
 
 Every row has its own raw server log in [`results/`](results/). smolagents made a second request after
 its step limit; it also read the whole stream (details in `results/README.md`).
