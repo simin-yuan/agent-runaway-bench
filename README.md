@@ -93,3 +93,6 @@ DOI [10.5281/zenodo.23808696](https://doi.org/10.5281/zenodo.23808696) — conce
 - 721 files: the untouched result files from all four benchmarks, copied byte-for-byte at the commits named in this repository's record section.
 - The records are CC-BY-4.0; the code in this repository keeps its own license (below).
 - Cite this repository for the method, and the dataset for the runs behind the numbers.
+---
+
+Part of the agent reliability toolkit → [agent-faultbench](https://github.com/simin-yuan/agent-faultbench)
