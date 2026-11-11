@@ -1,3 +1,5 @@
+> **Merged into [agent-faultbench](https://github.com/simin-yuan/agent-faultbench).** The suite is preserved there under `suites/runaway`; this repository is archived and read-only.
+
 # agent-runaway-bench
 
 What does an agent framework do when the model gets stuck repeating itself mid-reply?
